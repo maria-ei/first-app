@@ -1,0 +1,24 @@
+<div *ngFor="let items of products ; index as itemsId" class="main-container">
+
+  <div class="image-wrapper">
+    <img src={{items.imageUrl}} sizes="(max-width: 767px) 158px, (max-width: 1023px) 235px, 470px">
+  </div>
+
+  <div class="title">
+    <a [title]="items.name + ' details'" [routerLink]="['/products', itemsId]">
+      {{ items.name }}
+    </a>
+  </div>
+  <div class="current-price">
+    {{ items.price }}
+</div>
+<button (click)="addToCart(items,itemsId)">To Cart</button>
+
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+<a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+
+can be found in the LICENSE file at http://angular.io/license
+-->

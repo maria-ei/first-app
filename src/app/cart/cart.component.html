@@ -1,0 +1,24 @@
+
+<div class="main-container">
+<div data-title="mycart">Your Shopping Bag</div>
+<div class="cart-item" *ngFor="let item of items">
+  <span>{{item.quantity}}</span>
+  <hr>
+  <div class="name">
+    Product Name
+    <span>{{ item.name }}</span>
+
+  </div>
+  <div class="price">
+    Product Price
+    <span>{{ item.price }}</span>
+
+  </div>
+  <div class="itemQuantity">
+    Quantity
+    <span>{{ item.quantity }}</span>
+
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,10 @@
+div.main-container
+{
+display: inline-block;
+border: 3px solid black;
+}
+
+div.title
+{
+    border:2px red solid;
+}
